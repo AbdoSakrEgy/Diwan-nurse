@@ -1,6 +1,6 @@
 # Diwan Nurse
 
-Diwan Nurse is a web application designed to facilitate healthcare services. Built with modern web technologies, it provides an intuitive and user-friendly interface for nurses and patients.
+A healthcare web app for managing appointments and patient records.
 
 ## Features
 - **Appointment Scheduling** – Easily book and manage medical appointments.
