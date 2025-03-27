@@ -1,0 +1,72 @@
+.main-container{
+  background-image: url("../files/gkld.png");
+  margin: 0;
+  padding: 0;
+  padding-right: 5vw;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar{
+  position: fixed;
+  width: 7vw;
+  top:0;
+  right: 0;
+  bottom: 0;
+  background: #E7EAEA;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 3vh;
+}
+
+.sidebar .icon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+#icon1{
+  background-color: #B8BFBF;
+}
+.logo{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+  padding: 0 1vw 0 0;
+  margin-bottom: 7vh;
+  cursor: pointer;
+}
+
+.logo img{
+  content:url(../files/logo.png);
+  max-width: 100%;
+  height: 7vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+.sidebar-icons{
+  font-size: 4vh;
+  color: #4F6466;
+}
+.sidebar a{
+  text-decoration: none;
+}
+/* ------------------------ */
+#sidebar .title{
+  display: none;
+  color: #4F6466;
+  text-align: right;
+  margin: 0;
+  width: 10vw;
+  font-size: large;
+  font-weight: 600;
+}

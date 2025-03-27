@@ -1,0 +1,435 @@
+/* groub */
+.groub-container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 95%;
+    height: 95vh;
+    overflow-y: auto;
+    margin: 0 5vw 0 2vw;
+  }
+.groub-container .row1,.groub-container .row2{
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+.groub-container .row1{
+    margin-top: 6vh;
+    margin-bottom: 10vh;
+}
+.groub-container .row1 .col-4{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+/* search */
+.search{
+    width: 95%;
+    height: 5vh;
+    border-radius: 40px;
+    padding: 1vh 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.groub-container .search input{
+    width: 93%;
+    height: 3vh;
+    font-size: 12px;
+    text-align: right;
+    border: 0px;
+}
+.groub-container *:focus {
+    outline: none;
+}
+
+/* dropdown */
+.groub-container .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    padding: 1vh 1vw;
+}
+
+.groub-container .icondrop{
+    cursor: pointer;
+}
+
+.groub-container .text {
+    color: #000000;
+    background-color: white;
+    text-align: right;
+    font-size: 12px;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    background-color: white;
+    min-width: 20vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    margin-top: 6vh;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+.groub-container .dropdown:active .dropdown-content {
+    display: block;
+}
+
+.groub-container .show {display: block;}
+
+/* Date */
+.datepicker-toggle {
+    width: 100%;
+}
+
+.datepicker-input {
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    padding: 1vh 1vw;
+}
+/* card */
+.groub-container .row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 .7vw;
+    overflow-y: auto;
+}
+.groub-container .row2 .card{
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 0 7vh 0;
+    padding: 0 3vw;
+    
+}
+/* section 1 */
+.groub-container .row2 .card .card-section-1{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    margin-top: 2vh;
+}
+/* section 2 */
+.groub-container .row2 .card .card-section-2{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+/* section 3 */
+.groub-container .row2 .card .card-section-3{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* section 4 */
+.groub-container .row2 .card .card-section-4{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2vh;
+}
+.groub-container .row2 .card .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    width: 50vw;
+    height: 4vh;
+    margin: auto 2vh auto 0;
+    padding: 2vh 0;
+}
+.groub-container .row2 .card .card-section-4 .btn:nth-child(1){
+    color: rgb(255, 255, 255);
+    background-color: #4F6466;
+    width: 5vw;
+    height: 3vh;
+}
+.groub-container .row2 .card .card-section-4 .btn:nth-child(2){
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 1px solid #4F6466;
+    width: 5vw; 
+    height: 3vh;
+}
+.groub-container .row2 .card .card-section-4 .btn:nth-child(2):hover{
+    color: rgb(255, 255, 255);
+    background-color: #4F6466;
+    border: 1px solid #4F6466;
+    width: 5vw; 
+    height: 3vh;
+}
+/* payModal */
+#payModal div{
+    width: 100%;
+    margin: auto;
+}
+/* payModal modal-header */
+#payModal .modal-header,#payModal .modal-header p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 1vh 2vh 1vh 1vh;
+    background-color: #4F6466;
+    color: white;
+}
+/* payModal body section1 */
+#payModal .modal-body{
+    padding: 0;
+}
+#payModal .modal-body .section1,#payModal .modal-body .section2,#payModal .modal-body .section3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding: 2vh 1vw;
+}
+#payModal .modal-body .section1{
+    background-color: #DEDEDE;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+#payModal .modal-body .info1 p:nth-child(1),.info2 p:nth-child(1),.info3 p:nth-child(1),.info4 p:nth-child(1),.info5 p:nth-child(1),.info6 p:nth-child(1),.info7 p:nth-child(1),.info8 p:nth-child(1){
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    margin: 0 1vw;
+}
+#payModal .modal-body .info1 p:nth-child(2),.info2 p:nth-child(2),.info3 p:nth-child(2),.info4 p:nth-child(2),.info5 p:nth-child(2),.info8 p:nth-child(2){
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    margin: 0 1vw;
+}
+/* payModal body section3 */
+#payModal .modal-body .section3 .box1,#payModal .modal-body .section3 .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    width: 7vw;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-top: 1vh;
+}
+/* payModal body section4 */
+#payModal .modal-body .section4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#payModal .modal-body .section4 .btn1,#payModal .modal-body .section4 .btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2vh;
+    font-size: small;
+    height: 3vh;
+    margin: 2vh 0 3vh 3vh;
+}
+#payModal .modal-body .section4 .btn1{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 1px solid #4F6466;
+    width: 5vw;
+    width: 7vw;
+}
+#payModal .modal-body .section4 .btn1:hover{
+    color: white;
+    background-color: #4F6466;
+}
+#payModal .modal-body .section4 .btn2{
+    color: rgb(255, 255, 255);
+    background-color: #1F8817;
+    width: 10vw;
+}
+/* changeModal */
+#changeModal .modal-content .modal-body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3vw;
+}
+#changeModal .modal-content .modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4f6466;
+    color: white;
+    height: 7vh;
+    padding: 0 3vw;
+}
+#changeModal .modal-content .modal-header p{
+    margin: 0;
+}
+#changeModal .modal-content .modal-header .fa-solid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #4F6466;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+/* all modal-section */
+.modal-section-1,.modal-section-2,.modal-section-3,.modal-section-4{
+    margin: 1vh 0;
+}
+.modal-section-1 div:nth-child(1),.modal-section-2 div:nth-child(1),.modal-section-3 div:nth-child(1),.modal-section-4 div:nth-child(1){
+    width: 10vw;
+}
+.modal-section-1 div p:nth-child(1),.modal-section-2 div p:nth-child(1),.modal-section-3 div p:nth-child(1),.modal-section-4 div p:nth-child(1){
+    color: #4F6466;
+    font-size: small;
+    margin: .5vh;
+}
+/* modal-section-1 */
+.modal-section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: right;
+}
+/* modal-section-2 */
+.modal-section-2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: right;
+}
+.modal-section-2 .price{
+    margin-top: 1vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+}
+.modal-section-2 .modaldropdown{
+    width: 10vw;
+    border-radius: 5px;
+    height: 5vh;
+    margin-top: 1vh;
+}
+.modal-section-2 .modaldropdown-content{
+    position: absolute;
+    min-width: 10vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 5px;
+    margin-top: 1vh;
+}
+/* modal-section-3 */
+.modal-section-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: right;
+}
+.modal-section-3 input{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: #707070;
+    border: .5px solid #707070;
+    border-radius: 5px;
+    width: 10vw;
+    padding: .5vh;
+}
+/* modal-section-4 */
+.modal-section-4{
+    display: flex;
+    justify-content: flex-start;
+    text-align: right;
+}
+.modal-section-4 .btn:nth-child(1),.modal-section-4 .btn:nth-child(1):hover{
+  color: rgb(255, 255, 255);
+  background-color: #4f6466;
+  width: 7vw;
+}
+.modal-section-4 .btn:nth-child(2),.modal-section-4 .btn:nth-child(2):hover{
+  color: white;
+  background-color: #C24A4A;
+  margin-left: 2vw;
+  width: 7vw;
+}
+/* deleteModal */
+#deleteModal .modal-header,#deleteModal .modal-header p{
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    margin: 0;
+    background-color: #4f6466;
+    color: white;
+}
+#deleteModal .modal-body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+#deleteModal .modal-body .div2,#deleteModal .modal-body .div2 .btn1,#deleteModal .modal-body .div2 .btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#deleteModal .modal-body .div2 .btn1{
+    color: #4F6466;
+    background-color: white;
+    border: .5px solid #4F6466;
+    width: 8vw;
+    height: 4vh;
+    font-size: small;
+    padding: 0;
+    margin-right: 4vw;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#deleteModal .modal-body .div2 .btn1:hover{
+    background-color: #4F6466;
+    color: white;
+}
+#deleteModal .modal-body .div2 .btn2{
+    color: rgb(255, 255, 255);
+    background-color: #C24A4A;
+    width: 8vw;
+    height: 4vh;
+    font-size: small;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
