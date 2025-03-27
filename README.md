@@ -1,4 +1,4 @@
-# Diwan Nurse
+# Diwan-nurse
 
 A healthcare web app for managing appointments and patient records.
 
